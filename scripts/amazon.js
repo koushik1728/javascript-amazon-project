@@ -97,7 +97,7 @@ products.forEach((product,index) => {
           </div>
 
           <button class="add-to-cart-button button-primary js-add-to-cart"
-            product-name = "${product.name}"
+            data-product-id = "${product.id}"
           >
             Add to Cart
           </button>
@@ -107,13 +107,44 @@ products.forEach((product,index) => {
 
 
 
-console.log(productsHTML);
+//console.log(productsHTML);
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
 
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
-      console.log(button.dataset);
+      const productId = button.dataset.productId; // words after data- (kebab case) converted to camel case;
+
+
+      let matchingItem;
+      
+      cart.forEach((item) => {
+        if (productId === item.productId){
+          matchingItem = item;
+        }
+      });
+      
+      
+      if(matchingItem){
+        matchingItem.quantity +=1;
+      }else{
+        cart.push({
+        productId: productId,
+        quantity: 1
+      });}
+
+      //console.log(cart);
+
+      let cartQuantity = 0;
+      cart.forEach((item) => {
+        cartQuantity += item.quantity;
+      });
+
+
+      document.querySelector('.js-cart-quantity').
+        innerText = cartQuantity;
+      //console.log(`Cart Quantity: ${cartQuantity}`);
     });
-  });
+  }); //Error: querySelectorALL is not function
+        //      querySelectorAll is.
