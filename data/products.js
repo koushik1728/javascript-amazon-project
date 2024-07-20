@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: "id1",
     image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0ca8fc65-dfe3-4881-b64b-bbb993cd3fc4/de0tuxb-f15841d5-3eb7-4d23-a6c5-ff4d71239bf8.jpg/v1/fill/w_813,h_983,q_70,strp/_brawl_stars__surge_by_hoovymx_de0tuxb-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkzNCIsInBhdGgiOiJcL2ZcLzBjYThmYzY1LWRmZTMtNDg4MS1iNjRiLWJiYjk5M2NkM2ZjNFwvZGUwdHV4Yi1mMTU4NDFkNS0zZWI3LTRkMjMtYTZjNS1mZjRkNzEyMzliZjguanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.54GeFHOj5SNW2NrA0fDu8pCfV5Mn2rfUayQl_H8DpNE",
