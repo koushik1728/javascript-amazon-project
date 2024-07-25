@@ -4,6 +4,9 @@ export const cart = [{
 },{
   productId: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
   quantity: 6
+},{
+  productId: "id1",
+  quantity: 4
 }];
 
 export function addToCart(productId ,quantity){
