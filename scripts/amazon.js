@@ -2,6 +2,8 @@ import {cart, addToCart} from '../data/cart.js';
 
 import {products} from '../data/products.js';
 
+import {moneyFormat} from './utils/money.js';
+
 let productsHTML = '';
 
 
@@ -27,7 +29,7 @@ products.forEach((product,index) => {
           </div>
 
           <div class="product-price">
-            $${(product.priceCents / 100).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            $${moneyFormat(product.priceCents)}
           </div>
 
           <div class="product-quantity-container ">
